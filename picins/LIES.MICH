@@ -1,0 +1,32 @@
+nformationen zu PICINS (Version 3.0)
+ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ
+
+Edmund Lang, THD/HRZ, 17.11.92
+
+
+PICINS ist ein Makropaket fr LaTeX, das die Integration von Bildern in
+LaTeX-Dokumente auf einfache Weise erm”glicht.
+
+Die Dokumentation zu PICINS ist in der Datei MPIC.DVI enthalten.
+
+Das Hilfsprogram PCLTOMSP stammt aus dem emTeX-Paket von E. Mattes.
+
+Folgende Dateien sind Bestandteil des PICINS-Paketes:
+
+- !INFO.DOK		Diese Dokumentations-Datei
+- PICINS.STY		PICINS-Makro-Paket als .STY-Datei
+- PICINS.DOC		Dokumentierte Form von PICINS.STY
+			(wird nur zur Dokumentation ben”tigt)
+- PICINS.ALT		Alte Version der PICINS.STY-Datei (wird aus
+			Kompatibilit„tsgrnden noch zur Verfgung gestellt)
+- EXTPIC.STY		Makros zur Realisierung von \special-Kommandos
+- MPIC.DVI		Benutzer-Handbuch in DVI-Form
+- MANDEL.*		Externes Bild (erscheint im Benutzerhandbuch)
+- MEXHAT1.*		Externes Bild (erscheint im Benutzerhandbuch)
+- MEXHAT2.*		Externes Bild (erscheint im Benutzerhandbuch)
+- PCLREL.EXE		Hilfsprogramm PCLRel
+- PCLTOMSP.EXE		Konvertierungsprogramm PCLtoMSP
+- PCLTOMSP.DOC		Dokumentation zu PCLtoMSP
+- HPTOXX.EXE		Konvertierungsprogramm HPtoXX
+- HPTOXX.DVI		Dokumentation zu HPtoXX
+

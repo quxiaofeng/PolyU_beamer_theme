@@ -1,0 +1,71 @@
+\ProvidesPackage{beamerthemeHongKong}[2008/12/31]
+\def\beamerhongkong@version{3.07}
+
+% Copyright 2003      by Till Tantau  <tantau@users.sourceforge.net>
+%       and 2005-2006 by Jorg Cassens <jmt@cassens.org>
+%       and 2008-2009 by QU Xiaofeng   <csxfqu@comp.polyu.edu.hk>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+
+\ifx\beamer@version\beamerhongkong@version
+\else
+  \PackageWarningNoLine{beamerthemeHongKong}{This version of beamerthemeHongKong (\beamerhongkong@version ) might not work with detected beamer class \beamer@version}
+\fi
+
+\mode<presentation>
+
+\newif\ifbeamer@minimal
+\newif\ifbeamer@nonav
+\newif\ifbeamer@red
+\newif\ifbeamer@yellow
+\newif\ifbeamer@numbers
+\newif\ifbeamer@shadow
+\newif\ifbeamer@nologo
+\newif\ifbeamer@polyu
+
+\beamer@minimalfalse
+\beamer@nonavfalse
+\beamer@redfalse
+\beamer@yellowfalse
+\beamer@numbersfalse
+\beamer@shadowtrue
+\beamer@nologotrue
+\beamer@polyufalse
+
+\DeclareOptionBeamer{compress}{\beamer@compresstrue}
+\DeclareOptionBeamer{minimal}{\beamer@minimaltrue}
+\DeclareOptionBeamer{nonav}{\beamer@nonavtrue}
+\DeclareOptionBeamer{red}{\beamer@redtrue}
+\DeclareOptionBeamer{yellow}{\beamer@yellowtrue}
+\DeclareOptionBeamer{numbers}{\beamer@numberstrue}
+\DeclareOptionBeamer{noshadow}{\beamer@shadowfalse}
+\DeclareOptionBeamer{nologo}{\beamer@nologofalse}
+\DeclareOptionBeamer{polyu}{\beamer@polyutrue}
+
+\ProcessOptionsBeamer
+
+\ifbeamer@shadow
+  \useinnertheme[shadow=true]{rounded}
+\else
+  \useinnertheme{rounded}
+\fi
+\useoutertheme{polyu}
+\usecolortheme{polyured}
+
+\ifbeamer@red
+  \setbeamercolor{normal text}{fg=black,bg=white!95!polyured}
+\fi
+
+\ifbeamer@yellow
+  \setbeamercolor{normal text}{fg=black,bg=white!95!polyuyellow}
+\fi
+
+\ifbeamer@nonav
+  \setbeamertemplate{navigation symbols}{}  % Removes navigation symbols.
+\fi
+
+\setbeamerfont{block title}{size={}}
+
+\mode
+<all>

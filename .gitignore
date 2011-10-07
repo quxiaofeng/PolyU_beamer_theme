@@ -1,0 +1,23 @@
+## Lines starting with '#' are considered comments.
+## Ignore any file named foo.txt.
+#foo.txt
+## Ignore (generated) html files,
+#*.html
+## except foo.html which is maintained by hand.
+#!foo.html
+## Ignore objects and archives.
+#*.[oa]
+# Ignore temporary compiling files.
+*.synctex.gz
+*.out
+*.log
+*.nav
+*.aux
+*.toc
+*.snm
+# Ignore gvim temorary files
+*~
+
+
+
+
