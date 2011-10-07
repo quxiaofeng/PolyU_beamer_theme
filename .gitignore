@@ -17,6 +17,8 @@
 *.snm
 # Ignore gvim temorary files
 *~
+# Ignore pdf files
+*.pdf
 
 
 
