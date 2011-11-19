@@ -26,7 +26,7 @@
 
 \beamer@minimalfalse
 \beamer@nonavfalse
-\beamer@redfalse
+\beamer@redtrue
 \beamer@goldfalse
 \beamer@numbersfalse
 \beamer@shadowtrue
@@ -51,13 +51,14 @@
   \useinnertheme{rounded}
 \fi
 \useoutertheme{polyu}
-\usecolortheme{polyured}
 
 \ifbeamer@red
+  \usecolortheme{polyured}
   \setbeamercolor{normal text}{fg=black,bg=white!95!polyured}
 \fi
 
 \ifbeamer@gold
+  \usecolortheme{polyugold}
   \setbeamercolor{normal text}{fg=black,bg=white!95!polyugold}
 \fi
 

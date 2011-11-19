@@ -1,0 +1,51 @@
+\ProvidesPackage{beamercolorthemepolyured}[2012/12/31]
+
+% Copyright 2003      by Till Tantau   <tantau@users.sourceforge.net>
+%       and 2005-2007 by Joerg Cassens <jmt@cassens.org>
+%       and 2008-2012 by QU Xiaofeng   <quxiaofeng.at.polyu@gmail.com>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+
+\mode<presentation>
+
+\definecolor{polyured}{RGB}{160,35,55}
+\definecolor{polyuorange}{RGB}{255,102,0}
+\definecolor{polyuyellow}{RGB}{255,255,204}
+\definecolor{polyugold}{RGB}{142,109,79}
+
+\setbeamercolor{normal text}{fg=black,bg=white}
+\setbeamercolor{alerted text}{fg=polyured}
+
+\setbeamercolor{background canvas}{parent=normal text}
+\setbeamercolor{background}{parent=background canvas}
+
+\setbeamercolor{structure}{fg=polyugold,bg=white}
+
+\setbeamercolor{palette primary}{fg=white,bg=polyugold}
+\setbeamercolor{palette secondary}{fg=black,bg=polyugold!15}
+\setbeamercolor{palette tertiary}{fg=white,bg=polyugold!90}
+\setbeamercolor{palette quaternary}{fg=white,bg=polyugold}
+
+\setbeamercolor{titlelike}{parent=palette primary}
+
+\setbeamercolor{block title}{fg=white,bg=polyugold}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg!75!black}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg!75!black}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!15!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!15!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!15!bg}
+
+\setbeamercolor{sidebar}{bg=polyugold}
+
+\setbeamercolor{palette sidebar primary}{fg=white}
+\setbeamercolor{palette sidebar secondary}{fg=white!75}
+\setbeamercolor{palette sidebar tertiary}{fg=white!75}
+\setbeamercolor{palette sidebar quaternary}{fg=white}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\mode
+<all>
