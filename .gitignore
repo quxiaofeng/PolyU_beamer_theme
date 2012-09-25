@@ -9,6 +9,7 @@
 #*.[oa]
 # Ignore temporary compiling files.
 *.synctex.gz
+*.synctex.gz(busy)
 *.out
 *.log
 *.nav

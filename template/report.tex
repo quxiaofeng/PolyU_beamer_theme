@@ -1,26 +1,46 @@
-%\documentclass[CJK]{beamer}
 \documentclass{beamer}
-
-\usepackage{amssymb}
-
-\usepackage{latexsym,amssymb,amsmath,amsbsy,amsopn,amstext,color,multicol}
-\usepackage{graphicx,wrapfig,fancybox,watermark,picins}
-\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
-\usepackage{graphics}
+\usepackage{amssymb,latexsym,amssymb,amsmath,amsbsy,amsopn,amstext,upgreek}
+\usepackage{color,multicol}
+\usepackage{graphicx,wrapfig,fancybox,watermark,graphics}
+\usepackage{picins}
+\usepackage{pgf}
 \usepackage{movie15}
 \usepackage{hyperref}
+\hypersetup{
+    pdfpagemode=FullScreen, % show in full screen?
+}
+\usepackage{pdfpages}
 
-%\usepackage{CJK}
-%\usepackage{beamerthemeBerkeley}
-%\usepackage{beamerthemeshadow}
-%\usepackage{beamerthemeclassic}
-%\usepackage{beamerthemeSingapore}
-\usepackage[red,numbers]{beamerthemeHongKong}
+\usepackage{listings,bera}
+\definecolor{keywords}{RGB}{255,0,90}
+\definecolor{comments}{RGB}{60,179,113}
+\lstset{language=C,
+    keywordstyle=\color{keywords},
+    commentstyle=\color{comments}\emph
+}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
 
+% reference entry
+\usepackage{bibentry}
+\usepackage[numbers]{natbib}
 
+\usepackage[
+    compress,
+    %minimal,
+    nonav,
+    red,
+    %gold,
+    %numbers,
+    %nologo,
+    polyu,
+]
+{beamerthemeHongKong}
+\usefonttheme{structuresmallcapsserif}
 
 \begin{document}
-%\begin{CJK*}{GBK}{kai}
 
 \title{Title}
 \author{Author}
@@ -130,5 +150,5 @@
   \end{columns}
 \end{frame}
 
-%\end{CJK*}
+
 \end{document}
