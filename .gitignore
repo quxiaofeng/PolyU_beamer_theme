@@ -18,3 +18,4 @@
 *.snm
 # Ignore gvim temorary files
 *~
+*.swp

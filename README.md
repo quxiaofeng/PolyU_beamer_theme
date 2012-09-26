@@ -12,9 +12,11 @@ It is not finished, and only one reference setting is working and will be improv
 
 1. Need Beamer (of course)
 2. Need picins package in 
-~~~~~{#picins .tex}
+~~~~{#picins .c}
+
 \user\share\texmf\tex\latex\
-~~~~~~~~
+
+~~~~~~~~~
 
 
 
