@@ -67,7 +67,7 @@ The aim of this modification is to create a nice and tidy PolyU theme using NTNU
 + The mojority of colors are various kinds of deep and light brick red.
 + The RGB values are extracted from PolyU offcial website before. Though I asked computing office for these files, I got nothing.
 + Now PolyU VI standard is found, but only a little is added into this theme. More needs to be done.
-  1. Update color values according to the PolyU VI.
+  1. Update color values according to the [PolyU VI](http://www.polyu.edu.hk/cpa/polyu/index.php?option=com_content&view=article&id=156&Itemid=48).
   2. Check PolyU standard PPT template. Though the whole design will maitain, defects and false usage of polyu elements should be fixed.
 
 ## TODO
