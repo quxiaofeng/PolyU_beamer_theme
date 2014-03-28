@@ -4,7 +4,7 @@
 \usepackage{graphicx,wrapfig,fancybox,watermark,graphics}
 \usepackage{picins}
 \usepackage{pgf}
-\usepackage{movie15}
+\usepackage{media9}
 \usepackage{hyperref}
 \hypersetup{
     pdfpagemode=FullScreen, % show in full screen?
@@ -33,17 +33,19 @@
     nonav,
     red,
     %gold,
+    %blue,
     %numbers,
     %nologo,
     polyu,
+    comp,
+    %forty,
 ]
 {beamerthemeHongKong}
-\usefonttheme{structuresmallcapsserif}
 
 \begin{document}
 
-\title{Title}
-\author{Author}
+\title[Title short]{Title full}
+\author[Author short]{Author full}
 \institute[institute]{institute full name}
 \date{\today}
 \frame{\titlepage}
@@ -70,25 +72,17 @@
 \frametitle{\subsecname}
   \begin{columns}
   \column{0.5\textwidth}
-    \begin{overprint}
-    \onslide<1>
-      \begin{figure}
-      \includegraphics[width=\textwidth]{image/test-image1}
-      \caption{figure A}
-      \end{figure}
-    \onslide<2>
-      \begin{figure}
-      \includegraphics[width=\textwidth]{image/test-image2}
-      \caption{figure B}
-      \end{figure}
-    \end{overprint}
+    \begin{figure}
+    \includegraphics[width=\textwidth]{image/test-image1}
+    \caption{figure A}
+    \end{figure}
   \column{0.5\textwidth}
-    \begin{block}{example}<1->
+    \begin{block}{example}
       \begin{enumerate}
-        \item<1-|alert@1>
+        \item<alert@1>
         text about figure A
-        \item<2-|alert@2>
-        text about figure B
+        \item
+        text
       \end{enumerate}
     \end{block}
   \end{columns}
@@ -96,47 +90,9 @@
 
 \subsection{Subsection A-B}
 
-\begin{frame}
-\frametitle{\subsecname}
-    \begin{itemize}[<+- | alert@+>]
-      \item
-      item A
-      \item
-      Item B
-      \item
-      Item C
-    \end{itemize}
-\end{frame}
-
 \section{Section B}
 
-\subsection{Subsection B-A}
-
-\begin{frame}
-\frametitle{\subsecname}
-    \begin{enumerate}
-      \item
-      item A
-      \item
-      Item B
-      \item
-      Item C
-    \end{enumerate}
-\end{frame}
-
-\subsection{Subsection B-B}
-
-\begin{frame}
-\frametitle{\subsecname}
-    \begin{itemize}
-      \item
-      item A
-      \item
-      Item B
-      \item
-      Item C
-    \end{itemize}
-\end{frame}
+\section{Section C}
 
 \subsection*{Thanks}
 

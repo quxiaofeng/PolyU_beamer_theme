@@ -1,12 +1,13 @@
-% Beamer Theme for the Hong Kong Polytechnic University
-% Qu Xiaofeng
-% Revised Sep. 26, 2012
+Beamer Theme for the Hong Kong Polytechnic University
+=====================================================
+
+by **Xiaofeng QU**
 
 ## About This Theme
 
 This a beamer theme created for The Hong Kong Polytechnic University.
 
-It is not finished, and only one reference setting is working and will be improved.
+It is not finished, and will be improved.
 
 ## Dependencies
 
@@ -27,30 +28,36 @@ It is not finished, and only one reference setting is working and will be improv
 \usepackage[
     compress,
     %minimal,
-    nonav,
+    %nonav,
     red,
     %gold,
+    %blue,
     numbers,
     %nologo,
     %polyu,
+    %comp,
+    %forty,
 ]
 {beamerthemeHongKong}
 ~~~~~~
 
 + "compress" option is recommended. It provides a short header and information about slides structure.
-+ "minimal" option provides a simpliest framework.
++ "minimal" option provides a simplest framework.
 + "nonav" can suppress the navigating buttons on lower right-hand corner.
 + "red" option is the default and the only implemented color option.
-+ "gold" option is not ready. It is inspired by the 75th anniversary ceremony. But I can not find relevent color standard.
-+ "numbers" option is the pagenumber on the bottom left-hand corner.
++ "gold" option is not ready. It is inspired by the 75th anniversary ceremony. The link to the guidelines are found but dead. I am trying to get the access.
++ "blue" option is ready. It is inspired by the Computing Department 45th anniversary logo.
++ "numbers" option is the page number on the bottom left-hand corner.
 + "nologo" option enables the solo usage of color theme without PolyU logos on title page and headers.
 + "polyu" option is default option and it enables whether it exist or not.
++ "comp" option is to include the computing logo in the title page and the head banner.
++ "forty" option is to use the 40 anniversary logo in the title page and the head banner.
 
 
 ## Template
 
-+ CTex suite was the design target, and CJK is used for the Chinese support.
-+ Now it will change to be compiled with texlive 2012.
++ CTeX suite was the design target, and CJK is used for the Chinese support.
++ Now it will change to be compiled with texlive 2012 or above.
 
 ## About the design
 
@@ -64,14 +71,47 @@ The aim of this modification is to create a nice and tidy PolyU theme using NTNU
 
 ### Color
 
-+ The mojority of colors are various kinds of deep and light brick red.
-+ The RGB values are extracted from PolyU offcial website before. Though I asked computing office for these files, I got nothing.
++ The majority of colors are various kinds of deep and light brick red.
++ The RGB values are extracted from PolyU official website before. Though I asked computing office for these files, I got nothing.
 + Now PolyU VI standard is found, but only a little is added into this theme. More needs to be done.
   1. Update color values according to the [PolyU VI](http://www.polyu.edu.hk/cpa/polyu/index.php?option=com_content&view=article&id=156&Itemid=48).
-  2. Check PolyU standard PPT template. Though the whole design will maitain, defects and false usage of polyu elements should be fixed.
+  2. Check PolyU standard PPT template. Though the whole design will maintain, defects and false usage of polyu elements should be fixed.
+
+![](http://i.imgur.com/CaIGS0D.png)
+
+## COMP 40 Anniversary Theme `comp` and `forty`
+
+The new banners and logos
+
+![](http://i.imgur.com/3t7doME.jpg)
+
+![](http://i.imgur.com/A8Dczrk.jpg)
+
+And new color called `blue`
+
++ polyublue `(0, 140, 215) #008C7D`.
++ polyugreen `(143, 195,32) #8FC320`.
++ polyuicyblue`(83, 195,241) #53C3F1`.
+
+#### `forty` and `blue` ####
+
+![](http://i.imgur.com/mXdpisa.png)
+
+#### `comp` and `blue` ####
+
+![](http://i.imgur.com/gs2VH5A.png)
+
+#### `polyu`, `forty` and `blue` ####
+
+![](http://i.imgur.com/crOlltJ.png)
+
+#### `polyu`, `comp` and `red` ####
+
+![](http://i.imgur.com/gMEJTNi.png)
+
+**Actually, there are may different combinations. Just have fun.**
 
 ## TODO
 
 1. Update with PolyU VI.
-2. Add a gold setting following [PolyU's 75th Anniversary](http://75.polyu.hk/) color style. Maybe still have to capture a webpage to find colors.
-
+2. Add a gold setting following [PolyU's 75th Anniversary](http://75.polyu.hk/) color style. found the guidelines link [https://www2.polyu.edu.hk/Script/staff/cpa/Staff/75th_Guidelines/](https://www2.polyu.edu.hk/Script/staff/cpa/Staff/75th_Guidelines/) in this page [http://www.polyu.edu.hk/cpa/75thanniversary/index.php?route=gallery/seventyfivethanniversaryidentity](http://www.polyu.edu.hk/cpa/75thanniversary/index.php?route=gallery/seventyfivethanniversaryidentity). Have to contact [ITS](http://www.polyu.edu.hk/~its/aboutits/aboutits_04.html). If this attempt failed, the logo was designed by Mr Freeman Lau Siu-hong. Try to [contact him](http://www.freemanlau.com/en/index.html).

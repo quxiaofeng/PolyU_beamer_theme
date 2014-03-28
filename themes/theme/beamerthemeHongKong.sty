@@ -1,9 +1,9 @@
-\ProvidesPackage{beamerthemeHongKong}[2012/12/31]
-\def\beamerhongkong@version{3.12}
+\ProvidesPackage{beamerthemeHongKong}[2014/03/28]
+\def\beamerhongkong@version{3.26}
 
 % Copyright 2003      by Till Tantau  <tantau@users.sourceforge.net>
 %       and 2005-2006 by Jorg Cassens <jmt@cassens.org>
-%       and 2008-2012 by QU Xiaofeng  <quxiaofeng.at.polyu@gmail.com>
+%       and 2008-2014 by QU Xiaofeng  <xiaofeng.qu.hk@ieee.org>
 %
 % This program can be redistributed and/or modified under the terms
 % of the GNU Public License, version 2.
@@ -19,29 +19,39 @@
 \newif\ifbeamer@nonav
 \newif\ifbeamer@red
 \newif\ifbeamer@gold
+\newif\ifbeamer@blue
 \newif\ifbeamer@numbers
 \newif\ifbeamer@shadow
 \newif\ifbeamer@nologo
 \newif\ifbeamer@polyu
+\newif\ifbeamer@comp
+\newif\ifbeamer@forty
 
 \beamer@minimalfalse
 \beamer@nonavfalse
 \beamer@redtrue
 \beamer@goldfalse
+\beamer@bluefalse
 \beamer@numbersfalse
 \beamer@shadowtrue
 \beamer@nologotrue
 \beamer@polyufalse
+\beamer@compfalse
+\beamer@fortyfalse
 
 \DeclareOptionBeamer{compress}{\beamer@compresstrue}
 \DeclareOptionBeamer{minimal}{\beamer@minimaltrue}
 \DeclareOptionBeamer{nonav}{\beamer@nonavtrue}
 \DeclareOptionBeamer{red}{\beamer@redtrue}
 \DeclareOptionBeamer{gold}{\beamer@goldtrue}
+\DeclareOptionBeamer{blue}{\beamer@bluetrue}
 \DeclareOptionBeamer{numbers}{\beamer@numberstrue}
 \DeclareOptionBeamer{noshadow}{\beamer@shadowfalse}
 \DeclareOptionBeamer{nologo}{\beamer@nologofalse}
 \DeclareOptionBeamer{polyu}{\beamer@polyutrue}
+\DeclareOptionBeamer{comp}{\beamer@comptrue}
+\DeclareOptionBeamer{forty}{\beamer@fortytrue}
+
 
 \ProcessOptionsBeamer
 
@@ -50,6 +60,7 @@
 \else
   \useinnertheme{rounded}
 \fi
+
 \useoutertheme{polyu}
 
 \ifbeamer@red
@@ -60,6 +71,11 @@
 \ifbeamer@gold
   \usecolortheme{polyugold}
   \setbeamercolor{normal text}{fg=black,bg=white!95!polyugold}
+\fi
+
+\ifbeamer@blue
+  \usecolortheme{polyublue}
+  \setbeamercolor{normal text}{fg=black,bg=white!95!polyublue}
 \fi
 
 \ifbeamer@nonav
