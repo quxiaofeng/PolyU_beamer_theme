@@ -19,3 +19,4 @@
 # Ignore gvim temorary files
 *~
 *.swp
+*.zip

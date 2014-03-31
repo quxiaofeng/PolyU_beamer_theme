@@ -14,17 +14,18 @@ It is not finished, and will be improved.
 1. Need Beamer (of course)
 2. Need picins package in
 
-~~~~{#picins .c}
 
-\user\share\texmf\tex\latex\
+```{#picins .c}
 
-~~~~~~~~~
+\texmf-local\tex\latex\local\
+
+```
 
 
 
 ### Settings
 
-~~~{#theme .tex}
+```{#theme .tex}
 \usepackage[
     compress,
     %minimal,
@@ -34,12 +35,12 @@ It is not finished, and will be improved.
     %blue,
     numbers,
     %nologo,
-    %polyu,
+    polyu,
     %comp,
     %forty,
 ]
 {beamerthemeHongKong}
-~~~~~~
+```
 
 + "compress" option is recommended. It provides a short header and information about slides structure.
 + "minimal" option provides a simplest framework.
