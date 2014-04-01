@@ -1,4 +1,4 @@
-\ProvidesPackage{beamercolorthemepolyugold}[2014/03/31]
+\ProvidesPackage{beamercolorthemepolyugold}[2014/04/01]
 
 % Copyright 2003      by Till Tantau   <tantau@users.sourceforge.net>
 %       and 2005-2007 by Joerg Cassens <jmt@cassens.org>
@@ -15,9 +15,13 @@
 \definecolor{polyusilver}{RGB}{143,143,140}% PMS 877C RGB #8F8F8C
 \definecolor{polyuorange}{RGB}{255,102,0}
 \definecolor{polyuyellow}{RGB}{255,255,204}
-\definecolor{polyublue}{RGB}{0,140,215}
-\definecolor{polyuicyblue}{RGB}{83,195,241}
-\definecolor{polyugreen}{RGB}{143,195,32}
+\definecolor{polyuseventyfivered}{RGB}{153,15,61}% CMYK: 0,90,60,40
+\definecolor{polyuseventyfivegrey}{RGB}{102,102,102}% CMYK: 0,0,0,60
+\definecolor{polyuseventyfivegold}{RGB}{230,166,89}% Pantone 722C or CMYK: 10,35,65,0
+\definecolor{polyuseventyfivegoldsecond}{RGB}{230,166,89}% Pantone 874C
+\definecolor{polyublue}{RGB}{0,140,215} % COMP
+\definecolor{polyuicyblue}{RGB}{83,195,241} % COMP
+\definecolor{polyugreen}{RGB}{143,195,32} % COMP
 
 \setbeamercolor{normal text}{fg=black,bg=white}
 \setbeamercolor{alerted text}{fg=polyured}
@@ -25,16 +29,16 @@
 \setbeamercolor{background canvas}{parent=normal text}
 \setbeamercolor{background}{parent=background canvas}
 
-\setbeamercolor{structure}{fg=polyugold,bg=white}
+\setbeamercolor{structure}{fg=polyuseventyfivegold,bg=white}
 
-\setbeamercolor{palette primary}{fg=white,bg=polyugold}
-\setbeamercolor{palette secondary}{fg=black,bg=polyugold!15}
-\setbeamercolor{palette tertiary}{fg=white,bg=polyugold!90}
-\setbeamercolor{palette quaternary}{fg=white,bg=polyugold}
+\setbeamercolor{palette primary}{fg=white,bg=polyuseventyfivegold}
+\setbeamercolor{palette secondary}{fg=black,bg=polyuseventyfivegold!10}
+\setbeamercolor{palette tertiary}{fg=white,bg=polyuseventyfivegold!90}
+\setbeamercolor{palette quaternary}{fg=white,bg=polyuseventyfivegold}
 
 \setbeamercolor{titlelike}{parent=palette primary}
 
-\setbeamercolor{block title}{fg=white,bg=polyugold}
+\setbeamercolor{block title}{fg=polyuseventyfivegrey,bg=polyuseventyfivegold}
 \setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg!75!black}
 \setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg!75!black}
 
@@ -42,7 +46,7 @@
 \setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!15!bg}
 \setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!15!bg}
 
-\setbeamercolor{sidebar}{bg=polyugold}
+\setbeamercolor{sidebar}{bg=polyuseventyfivegold}
 
 \setbeamercolor{palette sidebar primary}{fg=white}
 \setbeamercolor{palette sidebar secondary}{fg=white!75}

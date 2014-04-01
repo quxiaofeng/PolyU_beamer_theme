@@ -1,4 +1,4 @@
-\ProvidesPackage{beamerouterthemepolyu}[2014/03/31]
+\ProvidesPackage{beamerouterthemepolyu}[2014/04/01]
 
 % Copyright 2003      by Till Tantau   <tantau@users.sourceforge.net>
 %       and 2005-2007 by Joerg Cassens <jmt@cassens.org>
@@ -16,32 +16,37 @@
 
 % Logo
 \ifbeamer@nologo
-  \ifbeamer@polyu
-    \ifbeamer@forty
-      \pgfdeclareimage[width=26ex,interpolate=true]{HK PolyU}{polyu/polyubanner}
-      \pgfdeclareimage[width=22ex,interpolate=true]{Computing Department}{polyu/comp40banner}%
-      \titlegraphic{\pgfuseimage{Computing Department}\hfil\pgfuseimage{HK PolyU}}
-    \else
-      \ifbeamer@comp
+  \ifbeamer@seventyfive
+    \pgfdeclareimage[width=36ex,interpolate=true]{HK PolyU}{polyu/seventyfivebanner}
+    \titlegraphic{\pgfuseimage{HK PolyU}}
+  \else
+    \ifbeamer@polyu
+      \ifbeamer@forty
         \pgfdeclareimage[width=26ex,interpolate=true]{HK PolyU}{polyu/polyubanner}
-        \pgfdeclareimage[width=26ex,interpolate=true]{Computing Department}{polyu/compbanner}%
+        \pgfdeclareimage[width=22ex,interpolate=true]{Computing Department}{polyu/comp40banner}%
         \titlegraphic{\pgfuseimage{Computing Department}\hfil\pgfuseimage{HK PolyU}}
       \else
-        \pgfdeclareimage[width=36ex,interpolate=true]{HK PolyU}{polyu/polyubanner}
-        \titlegraphic{\pgfuseimage{HK PolyU}}
+        \ifbeamer@comp
+          \pgfdeclareimage[width=26ex,interpolate=true]{HK PolyU}{polyu/polyubanner}
+          \pgfdeclareimage[width=26ex,interpolate=true]{Computing Department}{polyu/compbanner}%
+          \titlegraphic{\pgfuseimage{Computing Department}\hfil\pgfuseimage{HK PolyU}}
+        \else
+          \pgfdeclareimage[width=36ex,interpolate=true]{HK PolyU}{polyu/polyubanner}
+          \titlegraphic{\pgfuseimage{HK PolyU}}
+        \fi
       \fi
-    \fi
-  \else
-    \ifbeamer@forty
-      \pgfdeclareimage[width=40ex,interpolate=true]{Computing Department}{polyu/comp40banner}%
-      \titlegraphic{\pgfuseimage{Computing Department}}
     \else
-      \ifbeamer@comp
-        \pgfdeclareimage[width=36ex,interpolate=true]{Computing Department}{polyu/compbanner}%
+      \ifbeamer@forty
+        \pgfdeclareimage[width=40ex,interpolate=true]{Computing Department}{polyu/comp40banner}%
         \titlegraphic{\pgfuseimage{Computing Department}}
       \else
-        \pgfdeclareimage[width=36ex,interpolate=true]{HK PolyU}{polyu/polyubanner}
-        \titlegraphic{\pgfuseimage{HK PolyU}}
+        \ifbeamer@comp
+          \pgfdeclareimage[width=36ex,interpolate=true]{Computing Department}{polyu/compbanner}%
+          \titlegraphic{\pgfuseimage{Computing Department}}
+        \else
+          \pgfdeclareimage[width=36ex,interpolate=true]{HK PolyU}{polyu/polyubanner}
+          \titlegraphic{\pgfuseimage{HK PolyU}}
+        \fi
       \fi
     \fi
   \fi
@@ -148,21 +153,25 @@
           \leftskip0.3cm%
           \rightskip0.3cm plus1fil\leavevmode
           \ifbeamer@nologo
-            \ifbeamer@forty%
-              \insertframetitle%
-                \pgfdeclareimage[height=1.7ex,interpolate=true]{comp40logo}{polyu/comp40logo}\hfill\pgfuseimage{comp40logo}\hspace{.5ex}%
+            \ifbeamer@seventyfive
+              \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/seventyfivelogo}\hfill\pgfuseimage{logo}\hspace{.5ex}%
             \else
-              \ifbeamer@comp%
+              \ifbeamer@forty%
                 \insertframetitle%
-                  \pgfdeclareimage[height=1.7ex,interpolate=true]{complogo}{polyu/complogo}\hfill\pgfuseimage{complogo}\hspace{.5ex}%
-              \else%
-                \insertframetitle%
-                  \pgfdeclareimage[height=1.7ex,interpolate=true]{polyulogowhite}{polyu/polyulogo}\hfill\pgfuseimage{polyulogowhite}\hspace{.5ex}%
+                  \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/comp40logo}\hfill\pgfuseimage{logo}\hspace{.5ex}%
+              \else
+                \ifbeamer@comp%
+                  \insertframetitle%
+                    \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/complogo}\hfill\pgfuseimage{logo}\hspace{.5ex}%
+                \else%
+                  \insertframetitle%
+                    \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/polyulogo}\hfill\pgfuseimage{logo}\hspace{.5ex}%
+                \fi
               \fi
             \fi
           \else
             \insertframetitle%
-              \pgfdeclareimage[width=1ex,interpolate=true]{polyulogowhite}{polyu/polyulogo}%
+              \pgfdeclareimage[width=1ex,interpolate=true]{logo}{polyu/polyulogo}%
           \fi
           \ifx\insertframesubtitle\@empty%
             \strut\par%

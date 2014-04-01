@@ -1,4 +1,4 @@
-Beamer Theme for the Hong Kong Polytechnic University
+An Unofficial Beamer Theme for the Hong Kong Polytechnic University
 =====================================================
 
 by **Xiaofeng QU**
@@ -6,8 +6,6 @@ by **Xiaofeng QU**
 ## About This Theme
 
 This a beamer theme created for The Hong Kong Polytechnic University.
-
-It is not finished, and will be improved.
 
 ## Dependencies
 
@@ -38,6 +36,7 @@ It is not finished, and will be improved.
     polyu,
     %comp,
     %forty,
+    %seventyfive,
 ]
 {beamerthemeHongKong}
 ```
@@ -52,7 +51,8 @@ It is not finished, and will be improved.
 + "nologo" option enables the solo usage of color theme without PolyU logos on title page and headers.
 + "polyu" option is default option and it enables whether it exist or not.
 + "comp" option is to include the computing logo in the title page and the head banner.
-+ "forty" option is to use the 40 anniversary logo in the title page and the head banner.
++ "forty" option is to use the Computing Department 40th anniversary logo in the title page and the head banner.
++ "seventyfive" option is to use the PolyU 75th anniversary logo in the title page and the head banner.
 
 
 ## Template
@@ -78,15 +78,15 @@ The aim of this modification is to create a nice and tidy PolyU theme using NTNU
   1. Update color values according to the [PolyU VI](http://www.polyu.edu.hk/cpa/polyu/index.php?option=com_content&view=article&id=156&Itemid=48).
   2. Check PolyU standard PPT template. Though the whole design will maintain, defects and false usage of polyu elements should be fixed.
 
-![](http://i.imgur.com/CaIGS0D.png)
+![](http://i.imgur.com/j1Nl1FR.png)
 
 ## COMP 40 Anniversary Theme `comp` and `forty`
 
 The new banners and logos
 
-![](http://i.imgur.com/3t7doME.jpg)
+![](http://i.imgur.com/NlTejiH.jpg)
 
-![](http://i.imgur.com/A8Dczrk.jpg)
+![](http://i.imgur.com/RwKwlNG.jpg)
 
 And new color called `blue`
 
@@ -96,23 +96,30 @@ And new color called `blue`
 
 #### `forty` and `blue` ####
 
-![](http://i.imgur.com/mXdpisa.png)
+![](http://i.imgur.com/f4fARax.jpg)
 
 #### `comp` and `blue` ####
 
-![](http://i.imgur.com/gs2VH5A.png)
+![](http://i.imgur.com/4OGjxSA.jpg)
 
 #### `polyu`, `forty` and `blue` ####
 
-![](http://i.imgur.com/crOlltJ.png)
+![](http://i.imgur.com/AqpXt7C.jpg)
 
 #### `polyu`, `comp` and `red` ####
 
-![](http://i.imgur.com/gMEJTNi.png)
+![](http://i.imgur.com/aPY8hKY.jpg)
 
 **Actually, there are may different combinations. Just have fun.**
 
+## PolyU 75 Anniversary Theme `seventyfive` and `gold`
+
+![](http://i.imgur.com/0zqAyWG.png)
+
+![](http://i.imgur.com/n9luJJI.jpg)
+
 ## TODO
 
-1. Update with PolyU VI.
-2. Add a gold setting following [PolyU's 75th Anniversary](http://75.polyu.hk/) color style. found the guidelines link [https://www2.polyu.edu.hk/Script/staff/cpa/Staff/75th_Guidelines/](https://www2.polyu.edu.hk/Script/staff/cpa/Staff/75th_Guidelines/) in this page [http://www.polyu.edu.hk/cpa/75thanniversary/index.php?route=gallery/seventyfivethanniversaryidentity](http://www.polyu.edu.hk/cpa/75thanniversary/index.php?route=gallery/seventyfivethanniversaryidentity). Have to contact [ITS](http://www.polyu.edu.hk/~its/aboutits/aboutits_04.html). If this attempt failed, the logo was designed by Mr Freeman Lau Siu-hong. Try to [contact him](http://www.freemanlau.com/en/index.html).
+1. <del>Update with PolyU VI</del>.
+2. <del>Add a gold setting following [PolyU's 75th Anniversary](http://75.polyu.hk/) color style. found the guidelines link [https://www2.polyu.edu.hk/Script/staff/cpa/Staff/75th_Guidelines/](https://www2.polyu.edu.hk/Script/staff/cpa/Staff/75th_Guidelines/) in this page [http://www.polyu.edu.hk/cpa/75thanniversary/index.php?route=gallery/seventyfivethanniversaryidentity](http://www.polyu.edu.hk/cpa/75thanniversary/index.php?route=gallery/seventyfivethanniversaryidentity). Have to contact [ITS](http://www.polyu.edu.hk/~its/aboutits/aboutits_04.html). If this attempt failed, the logo was designed by Mr Freeman Lau Siu-hong. Try to [contact him](http://www.freemanlau.com/en/index.html).</del>
+3. Fine tuning of the color and other config.
