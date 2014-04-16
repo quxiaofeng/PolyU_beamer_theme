@@ -48,9 +48,9 @@ commentstyle=\color{comments}\emph}
 \newcommand{\inpng}[1]{\begin{figure}\centering\includegraphics[height=0.55\textheight]{im/#1}\end{figure}}
 
 \usepackage[
-	%compress,
-	%minimal,
-	%nonav,
+	compress,
+	minimal,
+	nonav,
 	%red,
 	%gold,
     blue,
@@ -73,13 +73,34 @@ commentstyle=\color{comments}\emph}
 % \usefonttheme{structureitalicserif}
 % \usefonttheme{strucutresmallcapsserif}
 %       English
-\setmainfont{Times New Roman}
-\setsansfont{Arial}
-\setmonofont{Inconsolata}
+% \setmainfont{CMU Sans Serif}
+% \setsansfont{Arial}
+% \setmonofont{Inconsolata}
 %       Chinese
-\setCJKmainfont[BoldFont={Hiragino Sans GB W6},ItalicFont={方正启体简体}]{方正新书宋简体}
-\setCJKsansfont{Hiragino Sans GB W3}
-\setCJKmonofont{文泉驿等宽正黑}
+\setCJKmainfont[
+	BoldFont={Hiragino Sans GB W6},
+	ItalicFont={方正启体简体},
+	BoldItalicFont={方正启体简体},
+	SlantedFont={方正苏新诗柳楷简体},
+	BoldSlantedFont={方正苏新诗柳楷简体},
+	SmallCapsFont={方正清刻本悦宋简体},
+	]{方正新书宋简体}
+\setCJKsansfont[
+	BoldFont={Hiragino Sans GB W6},
+	ItalicFont={方正启体简体},
+	BoldItalicFont={方正启体简体},
+	SlantedFont={方正苏新诗柳楷简体},
+	BoldSlantedFont={方正苏新诗柳楷简体},
+	SmallCapsFont={方正清刻本悦宋简体},
+	]{Hiragino Sans GB W3}
+\setCJKmonofont[
+	BoldFont={文泉驿等宽正黑},
+	ItalicFont={方正启体简体},
+	BoldItalicFont={方正启体简体},
+	SlantedFont={方正苏新诗柳楷简体},
+	BoldSlantedFont={方正苏新诗柳楷简体},
+	SmallCapsFont={方正清刻本悦宋简体},
+	]{文泉驿等宽正黑}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -159,14 +180,27 @@ commentstyle=\color{comments}\emph}
     \end{semiverbatim}
 \end{frame}
 
-\subsection{测试中文字体}
-\begin{frame}[t]{\subsecname} % t-top, c-center, s-shrank
+\subsection{测试中文字体 Fonts Test}
+\begin{frame}[allowframebreaks]{\subsecname} % t-top, c-center, s-shrank
     \begin{itemize}
-    \item \textrm{正文字体，建议用宋体}
-    \item \textit{斜体，建议用楷体}
-    \item \textbf{粗体，建议用黑体}
-    \item \textsf{对应西文无衬线字体，建议用黑体或者幼圆体}
-    \item \texttt{对应西文等宽字体，建议用中文等宽字体}
+    \item \textrm{衬线字体，建议用宋体、楷体、魏碑等。	Roman or Sans Serif}
+    \item \textsf{无衬线字体，建议用黑体或者幼圆体。	Serif}
+    \item \texttt{等宽字体，建议用中文等宽字体。		Monospaced}
+    \item \textrm{Roman 	 正文   \textbf{Bold 粗体，建议用黑体或隶书}}
+    \item \textsf{Sans Serif 无衬线 \textbf{Bold 粗体，建议用黑体或隶书}}
+    \item \texttt{Monospaced 等宽   \textbf{Bold 粗体，建议用黑体或隶书}}
+    \item \textrm{Roman 	 正文   \textsl{Slanted 斜体，建议用楷体。}}
+    \item \textsf{Sans Serif 无衬线 \textsl{Slanted 斜体，建议用楷体。}}
+    \item \texttt{Monospaced 等宽   \textsl{Slanted 斜体，建议用楷体。}}
+    \item \textrm{Roman 	 正文   \textit{Italic 手写体，建议用楷体、行书或者草书。}}
+    \item \textsf{Sans Serif 无衬线 \textit{Italic 手写体，建议用楷体、行书或者草书。}}
+    \item \texttt{Monospaced 等宽   \textit{Italic 手写体，建议用楷体、行书或者草书。}}
+    \item \textrm{Roman 	 正文   \textsc{Caps 全大写，应用夸张美术字。}}
+    \item \textsf{Sans Serif 无衬线 \textsc{Caps 全大写，应用夸张美术字。}}
+    \item \texttt{Monospaced 等宽   \textsc{Caps 全大写，应用夸张美术字。}}
+    \item \textsl{斜体，建议用楷体。}
+    \item \textit{手写体，建议用楷体、行书或者草书。}
+    \item \textsc{全大写，应用夸张美术字。}
     \end{itemize}
 \end{frame}
 

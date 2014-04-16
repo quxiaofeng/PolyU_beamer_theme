@@ -19,8 +19,10 @@
 *.vrb
 *.blg
 *.bbl
+*.fdb_latexmk
+*.fls
 # Ignore gvim temorary files
 *~
 *.swp
 *.zip
-resources
+/resources
