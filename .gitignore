@@ -16,6 +16,9 @@
 *.aux
 *.toc
 *.snm
+*.vrb
+*.blg
+*.bbl
 # Ignore gvim temorary files
 *~
 *.swp
