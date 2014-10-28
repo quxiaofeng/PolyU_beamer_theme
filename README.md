@@ -33,6 +33,8 @@ This a beamer theme created for The Hong Kong Polytechnic University.
     %blue,
     numbers,
     %nologo,
+    %nominilogo,
+    %minilogoleft,
     polyu,
     %comp,
     %forty,
@@ -49,6 +51,8 @@ This a beamer theme created for The Hong Kong Polytechnic University.
 + "blue" option is ready. It is inspired by the Computing Department 45th anniversary logo.
 + "numbers" option is the page number on the bottom left-hand corner.
 + "nologo" option enables the solo usage of color theme without PolyU logos on title page and headers.
++ "nominilogo" option removes the white mini logo typically on the right of the title bar.
++ "minilogoleft" option moves the mini logo to the left of the title bar.
 + "polyu" option is default option and it enables whether it exist or not.
 + "comp" option is to include the computing logo in the title page and the head banner.
 + "forty" option is to use the Computing Department 40th anniversary logo in the title page and the head banner.
@@ -122,4 +126,4 @@ And new color called `blue`
 
 1. <del>Update with PolyU VI</del>.
 2. <del>Add a gold setting following [PolyU's 75th Anniversary](http://75.polyu.hk/) color style. found the guidelines link [https://www2.polyu.edu.hk/Script/staff/cpa/Staff/75th_Guidelines/](https://www2.polyu.edu.hk/Script/staff/cpa/Staff/75th_Guidelines/) in this page [http://www.polyu.edu.hk/cpa/75thanniversary/index.php?route=gallery/seventyfivethanniversaryidentity](http://www.polyu.edu.hk/cpa/75thanniversary/index.php?route=gallery/seventyfivethanniversaryidentity). Have to contact [ITS](http://www.polyu.edu.hk/~its/aboutits/aboutits_04.html). If this attempt failed, the logo was designed by Mr Freeman Lau Siu-hong. Try to [contact him](http://www.freemanlau.com/en/index.html).</del>
-3. Fine tuning of the color and other config.
+3. <del>Fine tuning of the color and other config.</del>
