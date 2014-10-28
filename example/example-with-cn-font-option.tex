@@ -1,6 +1,9 @@
+% !TEX program = xelatex
+% !Mode:: "Tex:UTF-8"
+
 \documentclass[
-        % handout,
-        %draft,
+        % handout, % print version
+        % draft, % fast testing version
         ]{beamer}
 
 % math
@@ -39,12 +42,12 @@ commentstyle=\color{comments}\emph}
 %reference lib
 \nobibliography{refs}
 
-% include pdf page
+% include pdf page (only used for specific kind pdf file, reserved for reference)
 \newcommand{\inpdfu}[2]{\begin{figure}\centering\includegraphics[trim=1.4in 6.5in 1.4in 1.4in, clip, height=0.7\textheight, page={#2}]{im/lecture_#1}\end{figure}}
 \newcommand{\inpdfl}[2]{\begin{figure}\centering\includegraphics[trim=1.4in 1.4in 1.4in 6.5in, clip, height=0.7\textheight, page={#2}]{im/lecture_#1}\end{figure}}
 \newcommand{\inpdfc}[2]{\begin{figure}\centering\includegraphics[trim=0.15in 0.2in 0.15in 0.2in, clip, height=0.75\textheight, page={#2}]{im/lecture_#1}\end{figure}}
 
-% include png images
+% include png images (actually not only for png, reserved for an example of convenient way for including pictures)
 \newcommand{\inpng}[1]{\begin{figure}\centering\includegraphics[height=0.55\textheight]{im/#1}\end{figure}}
 
 \usepackage[
@@ -56,13 +59,15 @@ commentstyle=\color{comments}\emph}
     blue,
 	numbers,
 	%nologo,
+    %nominilogo,
+    minilogoleft,
 	polyu,
     comp,
     %forty,
     %seventyfive,
 	]{beamerthemeHongKong}
 
-% fonts
+% fonts (Enable only when you really need to mess with the fonts)
 \usepackage{xeCJK}
 \usepackage{xltxtra}
 %       beamer
@@ -73,40 +78,40 @@ commentstyle=\color{comments}\emph}
 % \usefonttheme{structureitalicserif}
 % \usefonttheme{strucutresmallcapsserif}
 %       English
-% \setmainfont{CMU Sans Serif}
-% \setsansfont{Arial}
-% \setmonofont{Inconsolata}
+\setmainfont{CMU Sans Serif}
+\setsansfont{Arial}
+\setmonofont{Inconsolata}
 %       Chinese
-\setCJKmainfont[
-	BoldFont={Hiragino Sans GB W6},
-	ItalicFont={方正启体简体},
-	BoldItalicFont={方正启体简体},
-	SlantedFont={方正苏新诗柳楷简体},
-	BoldSlantedFont={方正苏新诗柳楷简体},
-	SmallCapsFont={方正清刻本悦宋简体},
-	]{方正新书宋简体}
-\setCJKsansfont[
-	BoldFont={Hiragino Sans GB W6},
-	ItalicFont={方正启体简体},
-	BoldItalicFont={方正启体简体},
-	SlantedFont={方正苏新诗柳楷简体},
-	BoldSlantedFont={方正苏新诗柳楷简体},
-	SmallCapsFont={方正清刻本悦宋简体},
-	]{Hiragino Sans GB W3}
-\setCJKmonofont[
-	BoldFont={文泉驿等宽正黑},
-	ItalicFont={方正启体简体},
-	BoldItalicFont={方正启体简体},
-	SlantedFont={方正苏新诗柳楷简体},
-	BoldSlantedFont={方正苏新诗柳楷简体},
-	SmallCapsFont={方正清刻本悦宋简体},
-	]{文泉驿等宽正黑}
+% \setCJKmainfont[
+% 	BoldFont={Hiragino Sans GB W6},
+% 	ItalicFont={方正启体简体},
+% 	BoldItalicFont={方正启体简体},
+% 	SlantedFont={方正苏新诗柳楷简体},
+% 	BoldSlantedFont={方正苏新诗柳楷简体},
+% 	SmallCapsFont={方正清刻本悦宋简体},
+% 	]{方正新书宋简体}
+% \setCJKsansfont[
+% 	BoldFont={Hiragino Sans GB W6},
+% 	ItalicFont={方正启体简体},
+% 	BoldItalicFont={方正启体简体},
+% 	SlantedFont={方正苏新诗柳楷简体},
+% 	BoldSlantedFont={方正苏新诗柳楷简体},
+% 	SmallCapsFont={方正清刻本悦宋简体},
+% 	]{Hiragino Sans GB W3}
+% \setCJKmonofont[
+% 	BoldFont={文泉驿等宽正黑},
+% 	ItalicFont={方正启体简体},
+% 	BoldItalicFont={方正启体简体},
+% 	SlantedFont={方正苏新诗柳楷简体},
+% 	BoldSlantedFont={方正苏新诗柳楷简体},
+% 	SmallCapsFont={方正清刻本悦宋简体},
+% 	]{文泉驿等宽正黑}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title[Title 报告标题]{Report Template 报告模板}
-\author[Author 作者]{Xiaofeng QU\texorpdfstring{曲晓峰, Research Student\\\tiny{csxfqu@comp.polyu.edu.hk}}{}}
+\author[Author 作者]{Xiaofeng QU\texorpdfstring{曲晓峰, Research Student\\\tiny{xiaofeng.qu.hk@ieee.org}}{}}
 \institute[Institute 机构]{Department of \textit{Computing} \textit{电子计算}学系\\\textit{The Hong Kong Polytechnic} University \textit{香港理工}大学}
 \date{\today}
 
@@ -280,7 +285,7 @@ commentstyle=\color{comments}\emph}
 
 \begin{frame}[shrink]{The \texttt{shrink}ed Frame} % t-top, c-center, shrink
     \begin{enumerate}
-    \item \texttt{shrink} buys you a little space, but is not recommended.
+    \item \texttt{shrink} buys you a little space, but it is not recommended.
     \item Don't be overcrowded.
     \item Don't be overcrowded.
     \item Don't be overcrowded.

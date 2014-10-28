@@ -15,47 +15,53 @@
 \mode<presentation>
 
 % Logo
-\ifbeamer@nologo
-  \ifbeamer@seventyfive
-    \pgfdeclareimage[width=36ex,interpolate=true]{HK PolyU}{polyu/seventyfivebanner}
-    \titlegraphic{\pgfuseimage{HK PolyU}}
-  \else
-    \ifbeamer@polyu
-      \ifbeamer@forty
-        \pgfdeclareimage[width=26ex,interpolate=true]{HK PolyU}{polyu/polyubanner}
-        \pgfdeclareimage[width=22ex,interpolate=true]{Computing Department}{polyu/comp40banner}%
-        \titlegraphic{\pgfuseimage{Computing Department}\hfil\pgfuseimage{HK PolyU}}
-      \else
-        \ifbeamer@comp
-          \pgfdeclareimage[width=26ex,interpolate=true]{HK PolyU}{polyu/polyubanner}
+\ifbeamer@nologo%
+  \ifbeamer@seventyfive%
+    \pgfdeclareimage[width=36ex,interpolate=true]{HK PolyU}{polyu/seventyfivebanner}%
+    \titlegraphic{\pgfuseimage{HK PolyU}}%
+  \else%
+    \ifbeamer@polyu%
+      \ifbeamer@forty%
+        \pgfdeclareimage[width=26ex,interpolate=true]{HK PolyU}{polyu/polyubanner}%
+        \pgfdeclareimage[width=21ex,interpolate=true]{Computing Department}{polyu/comp40banner}%
+        \titlegraphic{\pgfuseimage{HK PolyU}\hfil\pgfuseimage{Computing Department}}%
+      \else%
+        \ifbeamer@comp%
+          \pgfdeclareimage[width=26ex,interpolate=true]{HK PolyU}{polyu/polyubanner}%
           \pgfdeclareimage[width=26ex,interpolate=true]{Computing Department}{polyu/compbanner}%
-          \titlegraphic{\pgfuseimage{Computing Department}\hfil\pgfuseimage{HK PolyU}}
-        \else
-          \pgfdeclareimage[width=36ex,interpolate=true]{HK PolyU}{polyu/polyubanner}
-          \titlegraphic{\pgfuseimage{HK PolyU}}
-        \fi
-      \fi
-    \else
-      \ifbeamer@forty
+          \titlegraphic{\pgfuseimage{HK PolyU}\hfil\pgfuseimage{Computing Department}}%
+        \else%
+          \pgfdeclareimage[width=36ex,interpolate=true]{HK PolyU}{polyu/polyubanner}%
+          \titlegraphic{\pgfuseimage{HK PolyU}}%
+        \fi%
+      \fi%
+    \else%
+      \ifbeamer@forty%
         \pgfdeclareimage[width=40ex,interpolate=true]{Computing Department}{polyu/comp40banner}%
-        \titlegraphic{\pgfuseimage{Computing Department}}
-      \else
-        \ifbeamer@comp
+        \titlegraphic{\pgfuseimage{Computing Department}}%
+      \else%
+        \ifbeamer@comp%
           \pgfdeclareimage[width=36ex,interpolate=true]{Computing Department}{polyu/compbanner}%
-          \titlegraphic{\pgfuseimage{Computing Department}}
-        \else
-          \pgfdeclareimage[width=36ex,interpolate=true]{HK PolyU}{polyu/polyubanner}
-          \titlegraphic{\pgfuseimage{HK PolyU}}
-        \fi
-      \fi
-    \fi
-  \fi
-\fi
+          \titlegraphic{\pgfuseimage{Computing Department}}%
+        \else%
+          \pgfdeclareimage[width=36ex,interpolate=true]{HK PolyU}{polyu/polyubanner}%
+          \titlegraphic{\pgfuseimage{HK PolyU}}%
+        \fi%
+      \fi%
+    \fi%
+  \fi%
+\fi%
 
 % Colors, Shades
 
-\setbeamercolor{section in head/foot}{parent=palette primary}
-\setbeamercolor{subsection in head/foot}{parent=palette secondary}
+
+\ifbeamer@minilogoleft
+  \setbeamercolor{section in head/foot}{parent=palette secondary}
+  \setbeamercolor{subsection in head/foot}{parent=palette primary}
+\else
+  \setbeamercolor{section in head/foot}{parent=palette primary}
+  \setbeamercolor{subsection in head/foot}{parent=palette secondary}
+\fi
 
 \setbeamercolor{author in head/foot}{parent=section in head/foot}
 \setbeamercolor{title in head/foot}{parent=subsection in head/foot}
@@ -64,6 +70,7 @@
 
 \setbeamercolor{frametitle}{parent=subsection in head/foot}
 \setbeamercolor{frametitle right}{parent=section in head/foot}
+
 
 \usesectionheadtemplate
   {\hfill\insertsectionhead}
@@ -151,34 +158,39 @@
       \setbox\beamer@tempbox=\hbox{\begin{minipage}[b]{\paperwidth}%
           \vbox{}\vskip-.5ex%
           \leftskip0.3cm%
-          \rightskip0.3cm plus1fil\leavevmode
-          \ifbeamer@nologo
-            \ifbeamer@seventyfive
-              \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/seventyfivelogo}\hfill\pgfuseimage{logo}\hspace{.5ex}%
-            \else
-              \ifbeamer@forty%
-                \insertframetitle%
-                  \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/comp40logo}\hfill\pgfuseimage{logo}\hspace{.5ex}%
-              \else
-                \ifbeamer@comp%
-                  \insertframetitle%
-                    \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/complogo}\hfill\pgfuseimage{logo}\hspace{.5ex}%
+          \rightskip0.3cm plus1fil\leavevmode%
+          \ifbeamer@minilogo%
+            \ifbeamer@nologo%
+              \ifbeamer@seventyfive%
+                \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/seventyfivelogo}%
+              \else%
+                \ifbeamer@forty%
+                  \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/comp40logo}%
                 \else%
-                  \insertframetitle%
-                    \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/polyulogo}\hfill\pgfuseimage{logo}\hspace{.5ex}%
-                \fi
-              \fi
-            \fi
-          \else
+                  \ifbeamer@comp%
+                    \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/complogo}%
+                  \else%
+                    \pgfdeclareimage[height=1.7ex,interpolate=true]{logo}{polyu/polyulogo}%
+                  \fi%
+                \fi%
+              \fi%
+              \ifbeamer@minilogoleft%
+                \hspace{-0.8ex}\pgfuseimage{logo}\hspace{1.2ex}\insertframetitle\hfill%
+              \else%
+                \insertframetitle\hfill\pgfuseimage{logo}\hspace{.5ex}%
+              \fi%
+            \else%
+              \insertframetitle%
+            \fi%
+          \else%
             \insertframetitle%
-              \pgfdeclareimage[width=1ex,interpolate=true]{logo}{polyu/polyulogo}%
-          \fi
+          \fi%
           \ifx\insertframesubtitle\@empty%
             \strut\par%
-          \else
+          \else%
             \par{\usebeamerfont*{framesubtitle}{\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}\strut\par}%
           \fi%
-          \nointerlineskip
+          \nointerlineskip%
           \vbox{}%
           \end{minipage}}%
       \beamer@tempdim=\ht\beamer@tempbox%

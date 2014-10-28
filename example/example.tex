@@ -1,56 +1,34 @@
 \documentclass{beamer}
-\usepackage{amssymb,latexsym,amssymb,amsmath,amsbsy,amsopn,amstext,upgreek}
-\usepackage{color,multicol}
-\usepackage{graphicx,wrapfig,fancybox,watermark,graphics}
-\usepackage{picins}
-\usepackage{pgf}
-\usepackage{media9}
-\usepackage{hyperref}
-\hypersetup{
-    pdfpagemode=FullScreen, % show in full screen?
-}
-\usepackage{pdfpages}
 
-\usepackage{listings,bera}
-\definecolor{keywords}{RGB}{255,0,90}
-\definecolor{comments}{RGB}{60,179,113}
-\lstset{language=C,
-    keywordstyle=\color{keywords},
-    commentstyle=\color{comments}\emph
-}
-\usepackage{algorithm}
-\usepackage{algorithmic}
-\renewcommand{\algorithmicrequire}{\textbf{Input:}}
-\renewcommand{\algorithmicensure}{\textbf{Output:}}
-
-% reference entry
-\usepackage{bibentry}
-\usepackage[numbers]{natbib}
+% See this: http://texblog.net/latex-archive/uncategorized/beamer-warnings/
+\let\Tiny=\tiny
 
 \usepackage[
     compress,
     %minimal,
     %nonav,
-    %red,
-    gold,
-    %blue,
+    red,
+    %gold,
+    blue,
     %numbers,
     %nologo,
-    %polyu,
-    %comp,
-    %forty,
-    seventyfive,
+    %nominilogo,
+    minilogoleft,
+    polyu,
+    comp,
+    forty,
+    %seventyfive,
 ]
 {beamerthemeHongKong}
-
-\begin{document}
 
 \title[Title short]{Title full}
 \author[Author short name]{Author full name}
 \institute[institute]{institute full name}
 \date{\today}
-\frame{\titlepage}
 
+\begin{document}
+
+\frame{\titlepage}
 
 \section*{Table of Contents}
 \frame {
@@ -69,8 +47,7 @@
 
 \subsection{Subsection A-A}
 
-\begin{frame}
-\frametitle{\subsecname}
+\begin{frame}{\subsecname}
   \begin{columns}
   \column{0.5\textwidth}
     \begin{figure}
@@ -97,8 +74,7 @@
 
 \subsection*{Thanks}
 
-\begin{frame}
-\frametitle{\subsecname}
+\begin{frame}{\subsecname}
   \begin{columns}
   \column{2.5cm}
   \column{5cm}

@@ -27,6 +27,8 @@
 \newif\ifbeamer@comp
 \newif\ifbeamer@forty
 \newif\ifbeamer@seventyfive
+\newif\ifbeamer@minilogoleft
+\newif\ifbeamer@minilogo
 
 \beamer@minimalfalse
 \beamer@nonavfalse
@@ -40,6 +42,8 @@
 \beamer@compfalse
 \beamer@fortyfalse
 \beamer@seventyfivefalse
+\beamer@minilogoleftfalse
+\beamer@minilogotrue
 
 \DeclareOptionBeamer{compress}{\beamer@compresstrue}
 \DeclareOptionBeamer{minimal}{\beamer@minimaltrue}
@@ -54,6 +58,8 @@
 \DeclareOptionBeamer{comp}{\beamer@comptrue}
 \DeclareOptionBeamer{forty}{\beamer@fortytrue}
 \DeclareOptionBeamer{seventyfive}{\beamer@seventyfivetrue}
+\DeclareOptionBeamer{minilogoleft}{\beamer@minilogolefttrue}
+\DeclareOptionBeamer{nominilogo}{\beamer@minilogofalse}
 
 
 \ProcessOptionsBeamer
