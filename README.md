@@ -1,6 +1,8 @@
 An Unofficial Beamer Theme for the Hong Kong Polytechnic University
 =====================================================
 
+[![Join the chat at https://gitter.im/quxiaofeng/PolyU_beamer_theme](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/quxiaofeng/PolyU_beamer_theme?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 by **Xiaofeng QU**
 
 ## About This Theme
